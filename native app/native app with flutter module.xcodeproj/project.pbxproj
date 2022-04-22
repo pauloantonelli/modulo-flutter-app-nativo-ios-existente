@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2465CBF281316400068CC49 /* FlutterEngine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2465CBE281316400068CC49 /* FlutterEngine.storyboard */; };
 		B2C205802811CEB4001A169A /* FlutterModulePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2057F2811CEB4001A169A /* FlutterModulePage1.swift */; };
 		B2CE09FF280DE6AE00E0C645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE09FE280DE6AE00E0C645 /* AppDelegate.swift */; };
 		B2CE0A01280DE6AE00E0C645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE0A00280DE6AE00E0C645 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 		138FDE3189AE992EBBC49DB9 /* Pods-native app with flutter module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native app with flutter module.release.xcconfig"; path = "Target Support Files/Pods-native app with flutter module/Pods-native app with flutter module.release.xcconfig"; sourceTree = "<group>"; };
 		7F583F483CF6ECA95FF968AE /* Pods-native app with flutter module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native app with flutter module.debug.xcconfig"; path = "Target Support Files/Pods-native app with flutter module/Pods-native app with flutter module.debug.xcconfig"; sourceTree = "<group>"; };
 		B152C8F0CD1E2A84D2E5F19C /* Pods_native_app_with_flutter_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_native_app_with_flutter_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2465CBE281316400068CC49 /* FlutterEngine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlutterEngine.storyboard; path = "native app with flutter module/Page/FlutterEngine.storyboard"; sourceTree = SOURCE_ROOT; };
 		B2C2057F2811CEB4001A169A /* FlutterModulePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterModulePage1.swift; sourceTree = "<group>"; };
 		B2CE09FB280DE6AE00E0C645 /* native app with flutter module.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native app with flutter module.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CE09FE280DE6AE00E0C645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C2057F2811CEB4001A169A /* FlutterModulePage1.swift */,
+				B2465CBE281316400068CC49 /* FlutterEngine.storyboard */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				B2CE0A0B280DE6B200E0C645 /* LaunchScreen.storyboard in Resources */,
 				B2CE0A08280DE6B200E0C645 /* Assets.xcassets in Resources */,
 				B2CE0A06280DE6AE00E0C645 /* Main.storyboard in Resources */,
+				B2465CBF281316400068CC49 /* FlutterEngine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

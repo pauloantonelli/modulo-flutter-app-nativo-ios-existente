@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="native_app_with_flutter_module" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first_view" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="native_app_with_flutter_module" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                                             <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOb-Dg-fnW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

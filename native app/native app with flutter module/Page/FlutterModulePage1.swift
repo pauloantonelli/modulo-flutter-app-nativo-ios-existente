@@ -8,11 +8,19 @@
 import Foundation
 import UIKit
 import Flutter
+// Used to connect plugins (only if you have plugins with iOS platform code).
+import FlutterPluginRegistrant
 
 class FlutterModulePage1ViewController: UIViewController {
+    lazy var flutterEngine = FlutterEngine(name: "flutter_module")
+    
   override func viewDidLoad() {
     super.viewDidLoad()
-
+      // Runs the default Dart entrypoint with a default Flutter route.
+      flutterEngine.run();
+      // Used to connect plugins (only if you have plugins with iOS platform code).
+      GeneratedPluginRegistrant.register(with: self.flutterEngine);
+      
     // Make a button to call the showFlutter function when pressed.
     let button = UIButton(type:UIButton.ButtonType.custom)
     button.addTarget(self, action: #selector(showFlutter), for: .touchUpInside)
@@ -23,7 +31,7 @@ class FlutterModulePage1ViewController: UIViewController {
   }
 
   @objc func showFlutter() {
-    let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+      let flutterEngine = self.flutterEngine // (UIApplication.shared.delegate as! AppDelegate).flutterEngine
     let flutterViewController =
         FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
     present(flutterViewController, animated: true, completion: nil)
