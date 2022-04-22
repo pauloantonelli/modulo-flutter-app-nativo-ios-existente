@@ -15,17 +15,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func goTo(_ sender: UIButton) {
-//        self.performSegue(withIdentifier: "second_view", sender: self)
         self.showFlutterPage()
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        print(segue.identifier)
-//        let destinationViewController = segue.destination as! FlutterModulePage1ViewController
-//        if segue.identifier == "second_view" {
-//
-//        }
-//    }
     
     func showFlutterPage() {
         let flutterPage = FlutterModulePage1ViewController()
