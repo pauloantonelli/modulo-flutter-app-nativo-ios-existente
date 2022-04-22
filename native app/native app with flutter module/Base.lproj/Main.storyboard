@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="native_app_with_flutter_module" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ie-lL-ARO">
+                                <rect key="frame" x="67" y="311" width="280" height="274"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ztt-gA-NHX">
+                                        <rect key="frame" x="20" y="20" width="240" height="128"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7s-6m-rjf">
+                                        <rect key="frame" x="65" y="209" width="150" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="jEB-m2-Af2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="To Flutter">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g7s-6m-rjf" firstAttribute="top" secondItem="Ztt-gA-NHX" secondAttribute="bottom" constant="61" id="0eB-Zd-2B5"/>
+                                    <constraint firstItem="g7s-6m-rjf" firstAttribute="centerX" secondItem="7Ie-lL-ARO" secondAttribute="centerX" id="BEy-5A-MF9"/>
+                                    <constraint firstItem="Ztt-gA-NHX" firstAttribute="top" secondItem="7Ie-lL-ARO" secondAttribute="top" constant="20" id="CPL-qb-dvv"/>
+                                    <constraint firstItem="Ztt-gA-NHX" firstAttribute="centerX" secondItem="g7s-6m-rjf" secondAttribute="centerX" id="agU-Aa-dbU"/>
+                                    <constraint firstItem="g7s-6m-rjf" firstAttribute="leading" secondItem="7Ie-lL-ARO" secondAttribute="leading" constant="65" id="mOd-La-W2A"/>
+                                    <constraint firstItem="Ztt-gA-NHX" firstAttribute="leading" secondItem="7Ie-lL-ARO" secondAttribute="leading" constant="20" id="rpk-we-vtf"/>
+                                    <constraint firstAttribute="bottom" secondItem="g7s-6m-rjf" secondAttribute="bottom" constant="20" id="wiY-Mv-hft"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ie-lL-ARO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="267" id="EEq-2o-uEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ie-lL-ARO" secondAttribute="trailing" constant="67" id="NRc-XR-lY0"/>
+                            <constraint firstItem="7Ie-lL-ARO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPc-31-6bP"/>
+                            <constraint firstItem="7Ie-lL-ARO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="mSb-Br-FWp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swift-logo" width="800" height="400"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
