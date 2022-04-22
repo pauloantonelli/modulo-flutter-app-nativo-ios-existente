@@ -13,18 +13,18 @@ import FlutterPluginRegistrant
 
 class FlutterModulePage1ViewController: UIViewController {
     lazy var flutterEngine = FlutterEngine(name: "flutter_module")
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Runs the default Dart entrypoint with a default Flutter route.
         flutterEngine.run();
         // Used to connect plugins (only if you have plugins with iOS platform code).
         GeneratedPluginRegistrant.register(with: self.flutterEngine);
-        
+
         // Make a button to call the showFlutter function when pressed.
         self.showActionButton()
     }
-    
+
     func showActionButton() {
         let button = UIButton(type:UIButton.ButtonType.custom)
         button.addTarget(self, action: #selector(showFlutter), for: .touchUpInside)
@@ -33,7 +33,7 @@ class FlutterModulePage1ViewController: UIViewController {
         button.backgroundColor = UIColor.blue
         self.view.addSubview(button)
     }
-    
+
     @objc func showFlutter() {
         let flutterEngine = self.flutterEngine // (UIApplication.shared.delegate as! AppDelegate).flutterEngine
         let flutterViewController =
